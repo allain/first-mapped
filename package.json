@@ -1,10 +1,10 @@
 {
   "name": "first-mapped",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Returns the first truthy mapping of elements in an array",
   "main": "index.js",
   "scripts": {
-		"format": "standard-format --write",
+    "format": "standard-format --write",
     "test": "tape test/**/*.js"
   },
   "keywords": [
