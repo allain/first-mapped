@@ -33,3 +33,14 @@ test('returns undefined if no truthy match', t => {
   t.equals(result, undefined)
   t.end()
 })
+
+test('supports objects', t => {
+  let result = firstMapped({a: 1, b: 2, c: 3}, (val, key, obj) => {
+    if (key === 'c') {
+      return 'HELLO'
+    }
+  })
+
+  t.equals(result, 'HELLO')
+  t.end()
+})
